@@ -172,7 +172,7 @@
   <br>
 
   <div style= "position: relative; left: 0; top: 0;">
-  		<img src="Pink_Bubble_Body.png" class="cell" height="1300" width="1300"/>
+  		<img src="cellWithSpindle.png" class="cell" height="1300" width="1300"/>
     <a href="https://www.ncbi.nlm.nih.gov/books/NBK22170/" target="_blank" >
       <img id = "i1" src="Chromosome 1.png" class = "c1" height="50" width ="50" />
     </a>
@@ -260,6 +260,29 @@
   <button onclick="changeSlowlyAll()" style ="float: right;">Stop it</button>
 </div>
 
+<br>
+<br>
+<br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br>
+<br>
+<br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br>
+<br>
+<br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br>
+<br>
+<h3>Face Activity</h3>
+<p2>Click on the image below and see all the possible combinations of faces that can arise from Independent Assortment.</p2>
+<br>
+<div style="position: relative; left: 10px; top: 40px;">
+    <img id = "person" width="400" height="400" src="person1.png" onclick="ranPic()" />
+</div>
+<br><br><br><br>
+<!-- width="114" height="38" -->
+
 <script type="text/javascript">
 document.body.style.backgroundColor = 'lightBlue';
 var blurredYes = false;
@@ -319,7 +342,11 @@ function sleep(milliseconds) {
   }
 }
 
-
+function ranPic() {
+  var pics = ['person1.png','person2.png','person3.png', 'person4.png', 'person5.png', 'person6.png', 'person7.png', 'person8.png']; //Set your colors here
+  var pic = pics[Math.floor(Math.random() * pics.length)];
+  document.getElementById("person").src=pic;
+}
 
 function getRandNumber1or2() {
     var inte = Math.floor((Math.random() * 2) + 1);
